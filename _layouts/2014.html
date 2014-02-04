@@ -70,6 +70,12 @@
     <div class="page__wrapper">
       <div class="page__body">
 
+        {% if page.heading %}
+        <header class="page__body__header header_bar">
+          <h2 class="header__heading">{{ page.heading }}</h2>
+        </header>
+        {% endif %}
+
         {{content}}
 
         <footer class="page__body__footer">
